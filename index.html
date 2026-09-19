@@ -384,6 +384,7 @@
   .cat-option { display: flex; align-items: center; gap: 6px; padding: 8px 13px; border-radius: 999px; background: var(--surface-2); border: 1.5px solid var(--border); cursor: pointer; font-size: 13px; }
   .day-option.selected, .cat-option.selected { border-color: var(--primary); background: var(--primary-soft); color: var(--primary); }
   .cat-option .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .date-picker .day-option { width: 34px; padding: 8px 0; font-size: 12px; }
 
   .repeat-note { margin: 7px 2px 0; font-size: 12px; color: var(--ink-muted); line-height: 1.5; }
 
@@ -563,11 +564,12 @@
           <li>Bấm vào một tiết đã có để sửa hoặc xoá.</li>
         </ul>
 
-        <h3>📤 Lịch gửi KHBD/BC</h3>
+        <h3>📤 Lịch gửi KHBD - Báo cáo</h3>
         <ul>
-          <li>Bấm nút "+ Lịch gửi" để đặt lịch nhắc gửi kế hoạch bài dạy.</li>
-          <li>Nhập nội dung, chọn thứ cần gửi, chọn giờ nhắc.</li>
-          <li>Cũng tự lặp lại hằng tuần như lịch lên lớp.</li>
+          <li>Bấm nút "+ Lịch gửi" để đặt lịch nhắc gửi KHBD hoặc Báo cáo.</li>
+          <li>Chọn loại <strong>KHBD</strong> (mặc định gửi hằng tuần) hoặc <strong>Báo cáo</strong> (mặc định gửi hằng tháng) — có thể đổi lại tần suất Hằng tuần/Hằng tháng cho cả hai loại.</li>
+          <li>Hằng tuần: chọn (các) thứ trong tuần cần gửi. Hằng tháng: chọn ngày trong tháng (1–31) cần gửi.</li>
+          <li>Nhập nội dung, chọn giờ nhắc rồi lưu lại — app sẽ tự lặp lại đúng lịch đó mỗi tuần/mỗi tháng, không phải chọn lại nhiều lần.</li>
         </ul>
 
         <h3>✅ Việc cần làm</h3>
@@ -586,7 +588,7 @@
           <tbody>
             <tr><td>🕖 Lịch dạy trong ngày</td><td>7h00 và 13h45 mỗi ngày — báo lịch dạy hôm nay/chiều nay.</td></tr>
             <tr><td>📌 Việc cần làm</td><td>Nhắc trước 24 giờ, 12 giờ, 1 giờ và nhắc thêm <strong>đúng giờ</strong> đã đặt (việc lặp hằng ngày, ví dụ uống thuốc, chỉ nhắc đúng giờ).</td></tr>
-            <tr><td>📤 Lịch gửi KHBD</td><td>Nhắc trước 24 giờ, 12 giờ, 1 giờ và đúng giờ hạn gửi.</td></tr>
+            <tr><td>📤 Lịch gửi KHBD/Báo cáo</td><td>Nhắc trước 24 giờ, 12 giờ, 1 giờ và đúng giờ hạn gửi (cả lịch hằng tuần lẫn hằng tháng).</td></tr>
             <tr><td>🔔 Hết tiết học</td><td>Có thể bật thêm để app báo ngay khi một tiết dạy vừa kết thúc.</td></tr>
           </tbody>
         </table>
@@ -597,7 +599,7 @@
         <p>App đưa việc vào ứng dụng <strong>Lịch</strong> có sẵn của iPhone hoặc Android. Lịch sẽ tự báo chuông <strong>đúng giờ</strong> và <strong>trước 1 giờ</strong>, kể cả khi đã tắt app hoặc khoá máy. Việc lặp hằng ngày chỉ báo đúng giờ.</p>
         <ul>
           <li><strong>Thêm một việc:</strong> bấm biểu tượng 📅 cạnh việc đó trong danh sách "Việc cần làm".</li>
-          <li><strong>Thêm tất cả:</strong> mở mục "Bật thông báo nhắc việc" → bấm "Thêm tất cả vào Lịch điện thoại". App sẽ thêm mọi việc chưa xong còn giờ hẹn sắp tới và lịch gửi KHBD (lặp hằng tuần). Lịch lên lớp không được thêm để tránh làm rối Lịch.</li>
+          <li><strong>Thêm tất cả:</strong> mở mục "Bật thông báo nhắc việc" → bấm "Thêm tất cả vào Lịch điện thoại". App sẽ thêm mọi việc chưa xong còn giờ hẹn sắp tới và lịch gửi KHBD/Báo cáo (lặp hằng tuần hoặc hằng tháng tuỳ lựa chọn). Lịch lên lớp không được thêm để tránh làm rối Lịch.</li>
         </ul>
         <p><strong>🍎 iPhone:</strong></p>
         <ol>
@@ -622,7 +624,7 @@
           <li><strong>Xuất dữ liệu hiện tại</strong> — tải toàn bộ dữ liệu đang có ra file Excel (sao lưu hoặc sửa trên máy tính).</li>
           <li><strong>Nhập dữ liệu</strong> — chọn một file Excel (file mẫu đã điền, file đã xuất ra rồi sửa, hoặc file trích xuất từ app hỗ trợ) để đưa dữ liệu vào app. Dòng có ID sẽ được cập nhật, dòng mới sẽ được thêm vào, không mất dữ liệu cũ.</li>
           <li><strong>Trích xuất nhanh bằng app</strong> — mở công cụ hỗ trợ trích xuất nhanh thông tin (ví dụ từ thời khoá biểu, kế hoạch có sẵn) ra đúng định dạng file nhập liệu. Dùng xong tải file kết quả về rồi quay lại bấm "Nhập dữ liệu".</li>
-          <li><strong>Xoá dữ liệu cũ</strong> — dùng khi muốn thay hẳn bằng bộ dữ liệu mới, tránh trùng. Chỉ xoá lịch lên lớp, lịch gửi KHBD và việc cần làm; không ảnh hưởng tên và cài đặt thông báo.</li>
+          <li><strong>Xoá dữ liệu cũ</strong> — dùng khi muốn thay hẳn bằng bộ dữ liệu mới, tránh trùng. Chỉ xoá lịch lên lớp, lịch gửi KHBD/Báo cáo và việc cần làm; không ảnh hưởng tên và cài đặt thông báo.</li>
         </ul>
 
         <h3>💻➡️📱 Cách chuyển dữ liệu từ máy tính sang điện thoại</h3>
@@ -641,7 +643,7 @@
         <h3>📌 Lưu ý chung</h3>
         <ul>
           <li>Mọi dữ liệu lưu ngay trên máy đang dùng, không tự đồng bộ sang máy khác — muốn dùng ở nhiều máy thì làm theo mục "Xuất / nhập dữ liệu".</li>
-          <li>Lịch lên lớp và lịch gửi KHBD tự lặp lại hằng tuần cho tới khi thầy cô sửa lại.</li>
+          <li>Lịch lên lớp tự lặp lại hằng tuần; lịch gửi KHBD/Báo cáo tự lặp lại hằng tuần hoặc hằng tháng theo lựa chọn — cho tới khi thầy cô sửa lại.</li>
           <li>Thông báo trong app cần app còn chạy nền; nên mở lại app hằng ngày. Với việc quan trọng (ví dụ giờ đón con), hãy bấm 📅 để thêm vào Lịch điện thoại cho chắc.</li>
         </ul>
 
@@ -682,7 +684,7 @@
       <input type="file" id="importFileInput" accept=".xlsx,.xls" style="display:none;">
       <div class="io-danger">
         <button class="btn btn-alarm-stop" id="deleteDataBtn" style="width:100%;">🗑️ Xoá dữ liệu cũ</button>
-        <p class="io-desc" style="margin:8px 0 0;">Xoá toàn bộ <strong>Lịch lên lớp, Lịch gửi KHBD và Việc cần làm</strong> hiện có trên máy — nên làm việc này trước khi nhập một bộ dữ liệu hoàn toàn mới, để tránh bị trùng hoặc xung đột với dữ liệu cũ. Không ảnh hưởng tới tên, nhật ký đã hoàn thành hay cài đặt thông báo.</p>
+        <p class="io-desc" style="margin:8px 0 0;">Xoá toàn bộ <strong>Lịch lên lớp, Lịch gửi KHBD - Báo cáo và Việc cần làm</strong> hiện có trên máy — nên làm việc này trước khi nhập một bộ dữ liệu hoàn toàn mới, để tránh bị trùng hoặc xung đột với dữ liệu cũ. Không ảnh hưởng tới tên, nhật ký đã hoàn thành hay cài đặt thông báo.</p>
       </div>
       <details class="io-guide">
         <summary>Cách cập nhật từ máy tính rồi đưa vào điện thoại</summary>
@@ -710,7 +712,7 @@
   <section class="card">
     <details class="io-collapse" id="khbdCollapse">
       <summary class="card-head">
-        <h2><span class="head-icon rose"><svg viewBox="0 0 16 16" fill="none"><path d="M3.5 2h6l3 3v9h-9z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9.3 2v3.2h3.2M5.5 8.5h5M5.5 11h3.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>Lịch gửi KHBD</h2>
+        <h2><span class="head-icon rose"><svg viewBox="0 0 16 16" fill="none"><path d="M3.5 2h6l3 3v9h-9z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9.3 2v3.2h3.2M5.5 8.5h5M5.5 11h3.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>Lịch gửi KHBD - Báo cáo</h2>
         <div style="display:flex;align-items:center;gap:8px;">
           <button class="card-add" id="addKhbdBtn">
             <svg viewBox="0 0 16 16" fill="none"><path d="M8 2.5V13.5M2.5 8H13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Lịch gửi
@@ -752,7 +754,7 @@
       </div>
       <div class="toggle-row" style="display:block;">
         <div class="toggle-text-title">📅 Nhắc bằng Lịch điện thoại (chắc chắn nhất)</div>
-        <div class="toggle-text-sub" style="margin:4px 0 10px;">Thêm việc vào ứng dụng Lịch của iPhone/Android, Lịch sẽ tự báo chuông đúng giờ và trước 1 giờ, kể cả khi đã tắt app. Bấm biểu tượng 📅 cạnh từng việc để thêm một việc, hoặc bấm nút dưới để thêm tất cả việc chưa xong và lịch gửi KHBD.</div>
+        <div class="toggle-text-sub" style="margin:4px 0 10px;">Thêm việc vào ứng dụng Lịch của iPhone/Android, Lịch sẽ tự báo chuông đúng giờ và trước 1 giờ, kể cả khi đã tắt app. Bấm biểu tượng 📅 cạnh từng việc để thêm một việc, hoặc bấm nút dưới để thêm tất cả việc chưa xong và lịch gửi KHBD/Báo cáo.</div>
         <button class="btn btn-primary" id="exportIcsBtn" style="width:100%;">📅 Thêm tất cả vào Lịch điện thoại</button>
       </div>
       <div class="toggle-row">
@@ -813,7 +815,7 @@
   <div class="hint">
     <strong>Mẹo cho iPhone:</strong> mở bằng Safari, nhấn nút Chia sẻ rồi chọn "Thêm vào MH chính" là có ngay một app riêng. Nên mở lại app hằng ngày để thông báo hoạt động đều đặn.<br>
     <strong>Mẹo cho Android:</strong> mở bằng Chrome, nhấn dấu ba chấm (⋮) góc trên rồi chọn "Cài đặt ứng dụng" hoặc "Thêm vào màn hình chính". Nếu thông báo hay bị gián đoạn, vào Cài đặt → Pin/Ứng dụng → tìm Chrome và bật "Không giới hạn/Cho phép chạy nền".<br><br>
-    Lịch lên lớp và lịch gửi KHBD tự lặp lại hàng tuần cho tới khi thầy cô sửa lại. Mọi dữ liệu lưu ngay trên máy.
+    Lịch lên lớp tự lặp lại hàng tuần; lịch gửi KHBD/Báo cáo tự lặp lại hàng tuần hoặc hàng tháng theo lựa chọn của thầy cô. Mọi dữ liệu lưu ngay trên máy.
   </div>
 
   <div class="dev-credit">
@@ -842,7 +844,7 @@
   <div class="type-picker" id="typePicker">
     <div class="type-option selected" data-type="task">Việc cần làm</div>
     <div class="type-option" data-type="class">Tiết dạy</div>
-    <div class="type-option" data-type="khbd">Gửi KHBD</div>
+    <div class="type-option" data-type="khbd">KHBD/Báo cáo</div>
   </div>
 
   <div class="field-group show" id="group-task">
@@ -884,8 +886,23 @@
   </div>
 
   <div class="field-group" id="group-khbd">
+    <div class="field">
+      <label>Loại lịch gửi</label>
+      <div class="seg" id="khbdCatPicker">
+        <div class="seg-opt selected" data-khbdcat="khbd">📤 KHBD</div>
+        <div class="seg-opt" data-khbdcat="baocao">📊 Báo cáo</div>
+      </div>
+    </div>
     <div class="field"><label for="khbdTitleInput">Nội dung gửi</label><input type="text" id="khbdTitleInput" placeholder="Ví dụ: Gửi KHBD tuần cho tổ trưởng" maxlength="200"></div>
-    <div class="field"><label>Lặp vào thứ (chọn được nhiều thứ)</label><div class="days-picker" id="daysPickerKhbd"></div></div>
+    <div class="field">
+      <label>Tần suất gửi</label>
+      <div class="seg" id="khbdFreqPicker">
+        <div class="seg-opt selected" data-khbdfreq="weekly">Hàng tuần</div>
+        <div class="seg-opt" data-khbdfreq="monthly">Hàng tháng</div>
+      </div>
+    </div>
+    <div class="field" id="khbdWeeklyField"><label>Lặp vào thứ (chọn được nhiều thứ)</label><div class="days-picker" id="daysPickerKhbd"></div></div>
+    <div class="field" id="khbdMonthlyField" style="display:none;"><label>Lặp vào ngày trong tháng</label><div class="days-picker date-picker" id="datePickerKhbd"></div></div>
     <div class="field"><label for="khbdTimeInput">Giờ nhắc</label><input type="time" id="khbdTimeInput"></div>
   </div>
 
@@ -930,7 +947,7 @@
     </label>
     <label class="delete-opt">
       <input type="radio" name="deleteScope" value="khbd">
-      <span>Toàn bộ <strong>Lịch gửi KHBD</strong></span>
+      <span>Toàn bộ <strong>Lịch gửi KHBD - Báo cáo</strong></span>
     </label>
     <label class="delete-opt">
       <input type="radio" name="deleteScope" value="items">
@@ -938,7 +955,7 @@
     </label>
     <label class="delete-opt">
       <input type="radio" name="deleteScope" value="all" checked>
-      <span><strong>Tất cả</strong> (Lịch lên lớp + Lịch gửi KHBD + Việc cần làm)</span>
+      <span><strong>Tất cả</strong> (Lịch lên lớp + Lịch gửi KHBD - Báo cáo + Việc cần làm)</span>
     </label>
   </div>
   <p class="io-desc" style="margin:0 0 4px;">Tên, giới tính, nhật ký đã hoàn thành và cài đặt thông báo vẫn được giữ nguyên.</p>
@@ -991,6 +1008,7 @@
   var editingId=null, editingType=null;
   var selectedCat='general';
   var selectedDaysClass=[], selectedDaysKhbd=[];
+  var selectedKhbdCat='khbd', selectedKhbdFreq='weekly', selectedDateKhbd=[];
   var selectedSession='morning', selectedTiet=1;
   var selectedRepeat='none';
   var activeTab='all', currentType='task';
@@ -1056,13 +1074,19 @@
     try{items=JSON.parse(localStorage.getItem(TASK_KEY))||[];}catch(e){items=[];}
     try{classes=JSON.parse(localStorage.getItem(CLASS_KEY))||[];}catch(e){classes=[];}
     try{khbds=JSON.parse(localStorage.getItem(KHBD_KEY))||[];}catch(e){khbds=[];}
+    khbds.forEach(function(k){
+      if(!k.category)k.category='khbd';
+      if(!k.freq)k.freq=(k.dates&&k.dates.length)?'monthly':'weekly';
+      if(!k.dates)k.dates=[];
+      if(!k.days)k.days=[];
+    });
     migrate();
   }
   function migrate(){
     var legacy; try{legacy=JSON.parse(localStorage.getItem(LEGACY));}catch(e){legacy=null;}
     if(!legacy||!legacy.length)return;
     legacy.forEach(function(it){
-      if(it.type==='khbd') khbds.push({id:uid(),title:it.title,days:it.days||[],time:it.time||''});
+      if(it.type==='khbd') khbds.push({id:uid(),title:it.title,category:'khbd',freq:'weekly',days:it.days||[],dates:[],time:it.time||''});
       else classes.push({id:uid(),className:it.title,area:it.room||'',days:it.days||[],session:'morning',tiet:1,start:it.start||'',end:it.end||''});
     });
     saveClasses(); saveKhbds();
@@ -1174,6 +1198,25 @@
     for(var i=0;i<CATS.length;i++)if(normVN(CATS[i].name)===n)return CATS[i].id;
     return 'general';
   }
+  function parseKhbdCatStr(str){
+    var n=normVN(str);
+    if(n.indexOf('bao cao')!==-1)return 'baocao';
+    return 'khbd';
+  }
+  function parseKhbdFreqStr(str){
+    var n=normVN(str);
+    if(n.indexOf('thang')!==-1)return 'monthly';
+    return 'weekly';
+  }
+  function parseDatesStr(str){
+    if(str==null||str==='')return [];
+    var out=[];
+    String(str).split(/[,;\/|]+/).forEach(function(tok){
+      var n=parseInt(String(tok).trim(),10);
+      if(!isNaN(n)&&n>=1&&n<=31&&out.indexOf(n)===-1)out.push(n);
+    });
+    return out;
+  }
   function toISODateVal(val){
     if(val==null||val==='')return '';
     if(val instanceof Date)return val.getFullYear()+'-'+pad(val.getMonth()+1)+'-'+pad(val.getDate());
@@ -1222,10 +1265,11 @@
     XLSX.utils.book_append_sheet(wb,wsT,'Viec can lam');
 
     var wsK=XLSX.utils.aoa_to_sheet([
-      ['ID (để trống nếu là mục mới)','Nội dung gửi','Thứ trong tuần','Giờ nhắc'],
-      ['','VÍ DỤ - Gửi KHBD tuần cho tổ trưởng','Thứ sáu','16:00']
+      ['ID (để trống nếu là mục mới)','Loại (KHBD/Báo cáo)','Nội dung gửi','Tần suất (Hàng tuần/Hàng tháng)','Thứ trong tuần (nếu Hàng tuần)','Ngày trong tháng (nếu Hàng tháng)','Giờ nhắc'],
+      ['','KHBD','VÍ DỤ - Gửi KHBD tuần cho tổ trưởng','Hàng tuần','Thứ sáu','','16:00'],
+      ['','Báo cáo','VÍ DỤ - Gửi báo cáo tháng cho nhà trường','Hàng tháng','','20','16:00']
     ]);
-    wsK['!cols']=[{wch:16},{wch:34},{wch:26},{wch:10}];
+    wsK['!cols']=[{wch:16},{wch:14},{wch:34},{wch:20},{wch:26},{wch:22},{wch:10}];
     XLSX.utils.book_append_sheet(wb,wsK,'Lich gui KHBD');
 
     var wsG=XLSX.utils.aoa_to_sheet([
@@ -1244,8 +1288,12 @@
       ['10. Cột "Lặp lại" (chỉ ở sheet Viec can lam): ghi Không lặp, Hàng ngày, Hàng tuần hoặc Hàng tháng.'],
       ['    - Hàng ngày: dùng cho việc lặp mỗi ngày như uống thuốc, sẽ nhắc đúng giờ, không nhắc trước.'],
       ['    - Hàng tuần / Hàng tháng: dùng cho việc lặp theo thứ/ngày của "Ngày" đã ghi (VD khám định kỳ hàng tháng), sẽ nhắc trước 24h, 12h và 1h.'],
-      ['11. Sau khi điền xong, lưu file rồi bấm "Nhập dữ liệu" trong app và chọn lại file này.'],
-      ['12. Nhập dữ liệu sẽ THÊM MỚI các dòng có ID trống, và CẬP NHẬT các dòng có ID trùng với mục đã có sẵn - không xoá dữ liệu cũ.']
+      ['11. Sheet "Lich gui KHBD" - cột "Loại": ghi KHBD hoặc Báo cáo.'],
+      ['12. Sheet "Lich gui KHBD" - cột "Tần suất": ghi Hàng tuần hoặc Hàng tháng.'],
+      ['    - Hàng tuần: điền cột "Thứ trong tuần" (VD: Thứ hai, Thứ tư), bỏ trống cột "Ngày trong tháng".'],
+      ['    - Hàng tháng: điền cột "Ngày trong tháng" (một hoặc nhiều ngày 1-31, cách nhau bởi dấu phẩy, VD: 20), bỏ trống cột "Thứ trong tuần".'],
+      ['13. Sau khi điền xong, lưu file rồi bấm "Nhập dữ liệu" trong app và chọn lại file này.'],
+      ['14. Nhập dữ liệu sẽ THÊM MỚI các dòng có ID trống, và CẬP NHẬT các dòng có ID trùng với mục đã có sẵn - không xoá dữ liệu cũ.']
     ]);
     wsG['!cols']=[{wch:96}];
     XLSX.utils.book_append_sheet(wb,wsG,'Huong dan');
@@ -1272,12 +1320,13 @@
     wsT['!cols']=[{wch:16},{wch:34},{wch:16},{wch:10},{wch:16},{wch:14}];
     XLSX.utils.book_append_sheet(wb,wsT,'Viec can lam');
 
-    var rowsK=[['ID','Nội dung gửi','Thứ trong tuần','Giờ nhắc']];
+    var rowsK=[['ID','Loại (KHBD/Báo cáo)','Nội dung gửi','Tần suất (Hàng tuần/Hàng tháng)','Thứ trong tuần (nếu Hàng tuần)','Ngày trong tháng (nếu Hàng tháng)','Giờ nhắc']];
     khbds.forEach(function(k){
-      rowsK.push([k.id,k.title,(k.days||[]).map(function(d){return DAY_FULL[d];}).join(', '),k.time||'']);
+      rowsK.push([k.id,k.category==='baocao'?'Báo cáo':'KHBD',k.title,k.freq==='monthly'?'Hàng tháng':'Hàng tuần',
+        (k.days||[]).map(function(d){return DAY_FULL[d];}).join(', '),(k.dates||[]).join(', '),k.time||'']);
     });
     var wsK=XLSX.utils.aoa_to_sheet(rowsK);
-    wsK['!cols']=[{wch:16},{wch:34},{wch:26},{wch:10}];
+    wsK['!cols']=[{wch:16},{wch:14},{wch:34},{wch:20},{wch:26},{wch:22},{wch:10}];
     XLSX.utils.book_append_sheet(wb,wsK,'Lich gui KHBD');
 
     var wsG=XLSX.utils.aoa_to_sheet([
@@ -1384,12 +1433,15 @@
 
     if(wsK){
       XLSX.utils.sheet_to_json(wsK,{header:1,raw:true,defval:''}).slice(1).forEach(function(r,i){
-        if(!r||(!r[1]&&!r[2]))return;
-        if(isExampleRow(r,1))return;
-        if(!r[1]){issues.push('"Lich gui KHBD" - dòng '+(i+2)+': thiếu Nội dung gửi nên bị bỏ qua.');return;}
-        var days=parseDaysStr(r[2]);
-        if(!days.length)issues.push('"Lich gui KHBD" - dòng '+(i+2)+' (nội dung "'+r[1]+'"): cột Thứ trong tuần trống hoặc ghi sai định dạng, mục vẫn được lưu nhưng sẽ không có ngày nhắc.');
-        var fields={title:String(r[1]).trim(),days:days,time:toHHMMVal(r[3])};
+        if(!r||(!r[2]&&!r[4]&&!r[5]))return;
+        if(isExampleRow(r,2))return;
+        if(!r[2]){issues.push('"Lich gui KHBD" - dòng '+(i+2)+': thiếu Nội dung gửi nên bị bỏ qua.');return;}
+        var freq=parseKhbdFreqStr(r[3]);
+        var days=parseDaysStr(r[4]);
+        var dates=parseDatesStr(r[5]);
+        if(freq==='weekly'&&!days.length)issues.push('"Lich gui KHBD" - dòng '+(i+2)+' (nội dung "'+r[2]+'"): Tần suất Hàng tuần nhưng cột Thứ trong tuần trống hoặc ghi sai định dạng, mục vẫn được lưu nhưng sẽ không có ngày nhắc.');
+        if(freq==='monthly'&&!dates.length)issues.push('"Lich gui KHBD" - dòng '+(i+2)+' (nội dung "'+r[2]+'"): Tần suất Hàng tháng nhưng cột Ngày trong tháng trống hoặc ghi sai định dạng, mục vẫn được lưu nhưng sẽ không có ngày nhắc.');
+        var fields={title:String(r[2]).trim(),category:parseKhbdCatStr(r[1]),freq:freq,days:days,dates:dates,time:toHHMMVal(r[6])};
         var eid=r[0]?String(r[0]).trim():'';
         var res=upsertById(khbds,eid,fields);
         if(res==='update')updK++;else addK++;
@@ -1550,7 +1602,7 @@
     document.getElementById('todayLabel').textContent=DAY_FULL[d.getDay()]+', ngày '+d.getDate()+' tháng '+(d.getMonth()+1);
     var today=d.getDay();
     document.getElementById('statTiet').textContent=classes.filter(function(c){return c.days.indexOf(today)!==-1;}).length;
-    document.getElementById('statKhbd').textContent=khbds.filter(function(k){return (k.days||[]).indexOf(today)!==-1;}).length;
+    document.getElementById('statKhbd').textContent=khbds.filter(khbdIsToday).length;
     document.getElementById('statTask').textContent=items.filter(function(i){return !i.done;}).length;
   }
 
@@ -1588,21 +1640,35 @@
     document.getElementById('scheduleBody').innerHTML=html||emptyBox('☀️','Hôm nay lịch hơi “thảnh thơi” một chút!','Chưa có tiết dạy nào.',' Nhấn “Tiết dạy” để thêm lịch cho "bận rộn" thầy/cô nhé!');
   }
 
+  function khbdIsToday(k){
+    if(k.freq==='monthly')return (k.dates||[]).indexOf(new Date().getDate())!==-1;
+    return (k.days||[]).indexOf(new Date().getDay())!==-1;
+  }
   function renderKhbd(){
     var el=document.getElementById('khbdBody');
-    if(!khbds.length){el.innerHTML='<div class="empty"><span class="emoji">🗂️</span><div class="big">Chưa có lịch gửi KHBD</div><div class="sm">Nhấn “Lịch gửi” để thêm lịch lặp hàng tuần.</div></div>';return;}
+    if(!khbds.length){el.innerHTML='<div class="empty"><span class="emoji">🗂️</span><div class="big">Chưa có lịch gửi KHBD/Báo cáo</div><div class="sm">Nhấn “Lịch gửi” để thêm lịch lặp hàng tuần hoặc hàng tháng.</div></div>';return;}
     var sorted=khbds.slice().sort(function(a,b){
-      var da=Math.min.apply(null,(a.days||[7]).map(function(d){return d===0?7:d;}));
-      var db=Math.min.apply(null,(b.days||[7]).map(function(d){return d===0?7:d;}));
-      return da!==db?da-db:(a.time||'99:99').localeCompare(b.time||'99:99');
+      var ka=a.freq==='monthly'?Math.min.apply(null,(a.dates&&a.dates.length?a.dates:[32])):Math.min.apply(null,(a.days&&a.days.length?a.days:[7]).map(function(d){return d===0?7:d;}));
+      var kb=b.freq==='monthly'?Math.min.apply(null,(b.dates&&b.dates.length?b.dates:[32])):Math.min.apply(null,(b.days&&b.days.length?b.days:[7]).map(function(d){return d===0?7:d;}));
+      if(a.category!==b.category)return a.category==='khbd'?-1:1;
+      return ka!==kb?ka-kb:(a.time||'99:99').localeCompare(b.time||'99:99');
     });
-    var today=new Date().getDay();
     var html='<ul class="list">';
     sorted.forEach(function(k){
-      var dayText=DAY_ORDER.filter(function(d){return (k.days||[]).indexOf(d)!==-1;}).map(function(d){return DAY_LABELS[d];}).join(', ');
-      var isToday=(k.days||[]).indexOf(today)!==-1;
+      var isMonthly=k.freq==='monthly';
+      var timeText;
+      if(isMonthly){
+        var dates=(k.dates||[]).slice().sort(function(x,y){return x-y;});
+        timeText=dates.length?('Ngày '+dates.join(', ')+' hàng tháng'):'chưa chọn ngày';
+      }else{
+        var dayText=DAY_ORDER.filter(function(d){return (k.days||[]).indexOf(d)!==-1;}).map(function(d){return DAY_LABELS[d];}).join(', ');
+        timeText=dayText||'chưa chọn thứ';
+      }
+      var isToday=khbdIsToday(k);
+      var catLabel=k.category==='baocao'?'📊 Báo cáo':'📤 KHBD';
       html+='<li class="item"><div class="khbd-icon">'+DOC+'</div><div class="item-body" data-action="open-khbd" data-id="'+k.id+'"><div class="item-title">'+esc(k.title)+'</div><div class="item-meta">';
-      html+='<span class="meta-chip'+(isToday?' hot':'')+'">'+CAL+(isToday?'Hôm nay · ':'')+(dayText||'chưa chọn thứ')+'</span>';
+      html+='<span class="meta-chip">'+catLabel+'</span>';
+      html+='<span class="meta-chip'+(isToday?' hot':'')+'">'+CAL+(isToday?'Hôm nay · ':'')+timeText+'</span>';
       if(k.time)html+='<span class="meta-chip">'+CLOCK+k.time+'</span>';
       html+='</div></div><button class="del-btn" data-action="delete-khbd" data-id="'+k.id+'" aria-label="Xoá">'+TRASH+'</button></li>';
     });
@@ -1737,6 +1803,26 @@
       });
     });
   }
+  function datePicker(id,arr){
+    var el=document.getElementById(id),h='';
+    for(var i=1;i<=31;i++)h+='<div class="day-option'+(arr.indexOf(i)!==-1?' selected':'')+'" data-date="'+i+'">'+i+'</div>';
+    el.innerHTML=h;
+    Array.prototype.forEach.call(el.querySelectorAll('.day-option'),function(o){
+      o.addEventListener('click',function(){
+        var d=parseInt(o.getAttribute('data-date'),10),p=arr.indexOf(d);
+        if(p===-1)arr.push(d);else arr.splice(p,1);
+        datePicker(id,arr);
+      });
+    });
+  }
+  function khbdFreqUI(){
+    document.getElementById('khbdWeeklyField').style.display=selectedKhbdFreq==='weekly'?'':'none';
+    document.getElementById('khbdMonthlyField').style.display=selectedKhbdFreq==='monthly'?'':'none';
+    Array.prototype.forEach.call(document.querySelectorAll('#khbdFreqPicker .seg-opt'),function(o){o.classList.toggle('selected',o.getAttribute('data-khbdfreq')===selectedKhbdFreq);});
+  }
+  function khbdCatUI(){
+    Array.prototype.forEach.call(document.querySelectorAll('#khbdCatPicker .seg-opt'),function(o){o.classList.toggle('selected',o.getAttribute('data-khbdcat')===selectedKhbdCat);});
+  }
   function tietPicker(){
     var count=SESSIONS[selectedSession].count;
     if(selectedTiet>count)selectedTiet=count;
@@ -1773,7 +1859,7 @@
     editingId=item?item.id:null;editingType=item?type:null;
     setType(type);
     document.getElementById('trashBtn').classList.toggle('show',!!item);
-    document.getElementById('sheetTitle').textContent=item?(type==='task'?'Sửa việc':type==='class'?'Sửa tiết dạy':'Sửa lịch gửi KHBD'):(type==='task'?'Việc mới':type==='class'?'Thêm tiết dạy':'Thêm lịch gửi KHBD');
+    document.getElementById('sheetTitle').textContent=item?(type==='task'?'Sửa việc':type==='class'?'Sửa tiết dạy':'Sửa lịch gửi KHBD/Báo cáo'):(type==='task'?'Việc mới':type==='class'?'Thêm tiết dạy':'Thêm lịch gửi KHBD/Báo cáo');
 
     if(type==='task'){
       document.getElementById('titleInput').value=item?item.title:'';
@@ -1792,8 +1878,12 @@
       else defaultTimes();
     }else{
       document.getElementById('khbdTitleInput').value=item?item.title:'';
+      selectedKhbdCat=item?(item.category||'khbd'):'khbd';khbdCatUI();
+      selectedKhbdFreq=item?(item.freq||'weekly'):'weekly';khbdFreqUI();
       selectedDaysKhbd=item?(item.days||[]).slice():[];
+      selectedDateKhbd=item?(item.dates||[]).slice():[];
       daysPicker('daysPickerKhbd',selectedDaysKhbd);
+      datePicker('datePickerKhbd',selectedDateKhbd);
       document.getElementById('khbdTimeInput').value=item?(item.time||''):'';
     }
     document.getElementById('backdrop').classList.add('show');
@@ -1827,9 +1917,10 @@
       saveClasses();
     }else{
       var kt=document.getElementById('khbdTitleInput').value.trim();
-      if(!kt){toast('Nhập nội dung gửi KHBD nhé.');return;}
-      if(!selectedDaysKhbd.length){toast('Chọn ít nhất một thứ trong tuần.');return;}
-      var kp={title:kt,days:selectedDaysKhbd.slice(),time:document.getElementById('khbdTimeInput').value};
+      if(!kt){toast('Nhập nội dung gửi nhé.');return;}
+      if(selectedKhbdFreq==='weekly'&&!selectedDaysKhbd.length){toast('Chọn ít nhất một thứ trong tuần.');return;}
+      if(selectedKhbdFreq==='monthly'&&!selectedDateKhbd.length){toast('Chọn ít nhất một ngày trong tháng.');return;}
+      var kp={title:kt,category:selectedKhbdCat,freq:selectedKhbdFreq,days:selectedKhbdFreq==='weekly'?selectedDaysKhbd.slice():[],dates:selectedKhbdFreq==='monthly'?selectedDateKhbd.slice():[],time:document.getElementById('khbdTimeInput').value};
       if(editingId&&editingType==='khbd'){
         var ki=khbds.findIndex(function(k){return k.id===editingId;});
         if(ki!==-1)khbds[ki]=Object.assign({id:editingId},kp);
@@ -1903,7 +1994,18 @@
     var o=e.target.closest('.type-option');if(!o)return;
     var t=o.getAttribute('data-type');setType(t);
     if(t==='class'){daysPicker('daysPickerClass',selectedDaysClass);sessionPicker();tietPicker();}
-    if(t==='khbd')daysPicker('daysPickerKhbd',selectedDaysKhbd);
+    if(t==='khbd'){daysPicker('daysPickerKhbd',selectedDaysKhbd);datePicker('datePickerKhbd',selectedDateKhbd);khbdCatUI();khbdFreqUI();}
+  });
+
+  document.getElementById('khbdCatPicker').addEventListener('click',function(e){
+    var o=e.target.closest('.seg-opt');if(!o)return;
+    selectedKhbdCat=o.getAttribute('data-khbdcat');khbdCatUI();
+    if(!editingId){selectedKhbdFreq=selectedKhbdCat==='baocao'?'monthly':'weekly';khbdFreqUI();}
+  });
+
+  document.getElementById('khbdFreqPicker').addEventListener('click',function(e){
+    var o=e.target.closest('.seg-opt');if(!o)return;
+    selectedKhbdFreq=o.getAttribute('data-khbdfreq');khbdFreqUI();
   });
 
   document.getElementById('fabBtn').addEventListener('click',function(){openSheet({type:'task'});});
@@ -2130,23 +2232,41 @@
       });
     });
   }
+  function khbdReminderLabel(k){return k.category==='baocao'?'gửi Báo cáo':'gửi KHBD';}
+  function fireKhbdOcc(k,occDate,tag){
+    var target=new Date(occDate+'T'+k.time+':00');
+    var now=new Date();
+    if(target<now-2*3600000)return;
+    REMIND_STAGES.forEach(function(st){
+      var remindAt=new Date(target.getTime()-st.h*3600000);
+      var key='khbd-'+k.id+'-'+tag+'-'+occDate+'-s'+st.n;
+      if(now>=remindAt&&(now-remindAt)<=st.grace*60000&&!notifiedMap.hasOwnProperty(key)){
+        fireNotif(key,(st.n===4?'⏰ Đến hạn '+khbdReminderLabel(k)+': ':'Nhắc '+khbdReminderLabel(k)+': ')+k.title,'Hạn vào '+occDate.split('-').reverse().join('/')+' lúc '+k.time+stageSuffix(st));
+      }
+    });
+  }
   function checkKhbdReminders(now){
     khbds.forEach(function(k){
-      if(!k.time||!(k.days||[]).length)return;
-      (k.days||[]).forEach(function(wd){
-        var d=new Date(todayStr()+'T00:00:00');
-        d.setDate(d.getDate()+((wd-d.getDay()+7)%7));
-        var occDate=d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
-        var target=new Date(occDate+'T'+k.time+':00');
-        if(target<now-2*3600000)return;
-        REMIND_STAGES.forEach(function(st){
-          var remindAt=new Date(target.getTime()-st.h*3600000);
-          var key='khbd-'+k.id+'-'+wd+'-'+occDate+'-s'+st.n;
-          if(now>=remindAt&&(now-remindAt)<=st.grace*60000&&!notifiedMap.hasOwnProperty(key)){
-            fireNotif(key,(st.n===4?'⏰ Đến hạn gửi KHBD: ':'Nhắc gửi KHBD: ')+k.title,'Hạn vào '+occDate.split('-').reverse().join('/')+' lúc '+k.time+stageSuffix(st));
+      if(!k.time)return;
+      if(k.freq==='monthly'){
+        (k.dates||[]).forEach(function(dom){
+          if(dom<1||dom>31)return;
+          function occForMonth(y,m){var lastDay=new Date(y,m+1,0).getDate();var day=Math.min(dom,lastDay);return y+'-'+pad(m+1)+'-'+pad(day);}
+          var occDate=occForMonth(now.getFullYear(),now.getMonth());
+          if(new Date(occDate+'T'+k.time+':00')<now-2*3600000){
+            var nm=new Date(now.getFullYear(),now.getMonth()+1,1);
+            occDate=occForMonth(nm.getFullYear(),nm.getMonth());
           }
+          fireKhbdOcc(k,occDate,'m'+dom);
         });
-      });
+      }else{
+        (k.days||[]).forEach(function(wd){
+          var d=new Date(todayStr()+'T00:00:00');
+          d.setDate(d.getDate()+((wd-d.getDay()+7)%7));
+          var occDate=d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+          fireKhbdOcc(k,occDate,'w'+wd);
+        });
+      }
     });
   }
   function checkEndClassReminders(now){
@@ -2254,19 +2374,40 @@
     return L;
   }
   function icsEventForKhbd(k,stamp,seq){
-    var days=(k.days||[]).filter(function(d){return d>=0&&d<=6;});
-    if(!k.time||!days.length)return null;
-    var base=new Date(todayStr()+'T00:00:00'),first=null;
-    for(var i=0;i<7&&!first;i++){
-      var d=new Date(base.getTime());d.setDate(d.getDate()+i);
-      if(days.indexOf(d.getDay())!==-1)first=d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+    if(!k.time)return null;
+    var title=(k.category==='baocao'?'Gửi Báo cáo: ':'Gửi KHBD: ')+k.title;
+    var L;
+    if(k.freq==='monthly'){
+      var dates=(k.dates||[]).filter(function(d){return d>=1&&d<=31;});
+      if(!dates.length)return null;
+      var today=new Date(),first=null,firstDom=dates.slice().sort(function(a,b){return a-b;})[0];
+      var y=today.getFullYear(),m=today.getMonth();
+      var lastDay=new Date(y,m+1,0).getDate();
+      var candidate=y+'-'+pad(m+1)+'-'+pad(Math.min(firstDom,lastDay));
+      if(new Date(candidate+'T'+k.time+':00')<new Date()){
+        var nm=new Date(y,m+1,1);lastDay=new Date(nm.getFullYear(),nm.getMonth()+1,0).getDate();
+        candidate=nm.getFullYear()+'-'+pad(nm.getMonth()+1)+'-'+pad(Math.min(firstDom,lastDay));
+      }
+      first=candidate;
+      var start=icsLocal(first,k.time,0),end=icsLocal(first,k.time,ICS_EVENT_MIN);
+      if(!start)return null;
+      L=['BEGIN:VEVENT','UID:nhacviec-khbd-'+k.id+'@nhacviec','DTSTAMP:'+stamp,'SEQUENCE:'+seq,
+        'DTSTART:'+start,'DTEND:'+end,'SUMMARY:'+icsEsc(title),
+        'RRULE:FREQ=MONTHLY;BYMONTHDAY='+dates.join(',')];
+    }else{
+      var days=(k.days||[]).filter(function(d){return d>=0&&d<=6;});
+      if(!days.length)return null;
+      var base=new Date(todayStr()+'T00:00:00'),firstW=null;
+      for(var i=0;i<7&&!firstW;i++){
+        var d=new Date(base.getTime());d.setDate(d.getDate()+i);
+        if(days.indexOf(d.getDay())!==-1)firstW=d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+      }
+      var start2=icsLocal(firstW,k.time,0),end2=icsLocal(firstW,k.time,ICS_EVENT_MIN);
+      if(!start2)return null;
+      L=['BEGIN:VEVENT','UID:nhacviec-khbd-'+k.id+'@nhacviec','DTSTAMP:'+stamp,'SEQUENCE:'+seq,
+        'DTSTART:'+start2,'DTEND:'+end2,'SUMMARY:'+icsEsc(title),
+        'RRULE:FREQ=WEEKLY;BYDAY='+days.map(function(d){return ICS_BYDAY[d];}).join(',')];
     }
-    var start=icsLocal(first,k.time,0),end=icsLocal(first,k.time,ICS_EVENT_MIN);
-    if(!start)return null;
-    var title='Gửi KHBD: '+k.title;
-    var L=['BEGIN:VEVENT','UID:nhacviec-khbd-'+k.id+'@nhacviec','DTSTAMP:'+stamp,'SEQUENCE:'+seq,
-      'DTSTART:'+start,'DTEND:'+end,'SUMMARY:'+icsEsc(title),
-      'RRULE:FREQ=WEEKLY;BYDAY='+days.map(function(d){return ICS_BYDAY[d];}).join(',')];
     L=L.concat(icsAlarmLines(ICS_ALARMS_ONCE,title));
     L.push('END:VEVENT');
     return L;
@@ -2322,7 +2463,7 @@
     });
     khbds.forEach(function(k){var ev=icsEventForKhbd(k,stamp,seq);if(ev){groups.push(ev);nKhbd++;}});
     if(!groups.length){toast('Chưa có việc nào có ngày giờ sắp tới để thêm vào Lịch.',4000);return;}
-    deliverIcs(icsBuild(groups),'nhac-viec-tat-ca.ics','Đã chuẩn bị '+nTask+' việc và '+nKhbd+' lịch KHBD. Chọn "Thêm tất cả" / "Add All" trong Lịch.');
+    deliverIcs(icsBuild(groups),'nhac-viec-tat-ca.ics','Đã chuẩn bị '+nTask+' việc và '+nKhbd+' lịch KHBD/Báo cáo. Chọn "Thêm tất cả" / "Add All" trong Lịch.');
   }
   var exportIcsBtnEl=document.getElementById('exportIcsBtn');
   if(exportIcsBtnEl)exportIcsBtnEl.addEventListener('click',exportAllIcs);
