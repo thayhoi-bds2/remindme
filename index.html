@@ -6,6 +6,8 @@
 <title>Ứng dụng nhắc việc dành cho giáo viên - thầy Hợi</title>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Nhắc việc GV">
+<meta name="theme-color" content="#8C489F">
+<link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="data:image/png;base64,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">
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -219,6 +221,13 @@
   }
   .del-btn svg { width: 15px; height: 15px; }
   .del-btn:active { color: var(--alert); }
+  .cal-btn {
+    flex: 0 0 auto; background: none; border: none; color: var(--primary);
+    padding: 0 6px 0 12px; cursor: pointer; display: flex; align-items: center;
+  }
+  .cal-btn svg { width: 17px; height: 17px; }
+  .cal-btn:active { opacity: .55; }
+  .cal-btn + .del-btn { padding-left: 8px; }
 
   /* ---------- khbd ---------- */
   li.item {
@@ -397,6 +406,23 @@
   .io-guide strong { color: var(--ink); }
   .io-danger { margin-top: 14px; padding-top: 14px; border-top: 1px dashed var(--border); }
 
+  /* ---------- Hướng dẫn sử dụng ---------- */
+  .guide-content h3 { font-family: var(--f-head); font-size: 14.5px; font-weight: 800; color: var(--primary-deep); margin: 18px 0 8px; }
+  .guide-content h3:first-of-type { margin-top: 0; }
+  .guide-content > p:first-child { font-size: 12.5px; color: var(--ink-muted); line-height: 1.6; margin: 0 0 4px; }
+  .guide-content p { margin: 0 0 8px; font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
+  .guide-content ul, .guide-content ol { margin: 0 0 8px; padding-left: 18px; font-size: 13px; color: var(--ink-soft); line-height: 1.7; }
+  .guide-content li { margin-bottom: 4px; }
+  .guide-content strong { color: var(--ink); }
+  .guide-table { width: 100%; border-collapse: collapse; margin: 6px 0 10px; font-size: 12.5px; }
+  .guide-table th, .guide-table td { text-align: left; padding: 8px 8px; border-bottom: 1px solid var(--border); color: var(--ink-soft); vertical-align: top; }
+  .guide-table th { color: var(--ink); font-weight: 700; }
+  .guide-note { margin: 6px 0 10px; padding: 10px 12px; border-radius: 12px; background: var(--primary-soft); font-size: 12.5px; color: var(--ink); line-height: 1.5; }
+  .guide-contact { margin-top: 14px; padding-top: 10px; border-top: 1px dashed var(--border); font-size: 12px; color: var(--ink-muted); line-height: 1.6; text-align: center; }
+  .guide-close-btn { background: var(--alert-soft); color: var(--alert); border: none; width: 34px; height: 34px; border-radius: 11px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex: 0 0 auto; }
+  .guide-close-btn svg { width: 15px; height: 15px; }
+  .guide-close-btn:active { transform: scale(.94); }
+
   /* ---------- thẻ thu gọn (Xuất/nhập dữ liệu) ---------- */
   .io-collapse > summary { list-style: none; cursor: pointer; }
   .io-collapse > summary::-webkit-details-marker { display: none; }
@@ -451,6 +477,12 @@
     border-top: 1px dashed var(--border);
   }
   .dev-credit .dev-name { font-weight: 700; color: var(--primary-deep); }
+  .visit-counter {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--ink-muted);
+  }
 </style>
 </head>
 <body>
@@ -463,10 +495,10 @@
         <p class="greet-sub" id="todayLabel"></p>
       </div>
       <div class="hero-top-actions">
-        <a class="guide-link-btn" id="userGuideBtn" href="https://drive.google.com/file/d/1fwMAjXW7UNQOGcLGF6q61I8mv3XY5-j-/view?usp=sharing" target="_blank" rel="noopener">
+        <button class="guide-link-btn" id="userGuideBtn" type="button">
           <svg viewBox="0 0 16 16" fill="none"><path d="M3 2.5h7l3 3v8a.5.5 0 0 1-.5.5h-9.5a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5z" stroke="#443266" stroke-width="1.2" stroke-linejoin="round"/><path d="M9.5 2.5v3h3" stroke="#443266" stroke-width="1.2" stroke-linejoin="round"/><path d="M5.5 8.2h5M5.5 10.2h5" stroke="#443266" stroke-width="1.1" stroke-linecap="round"/></svg>
           Hướng dẫn SD
-        </a>
+        </button>
         <button class="edit-name-btn" id="editNameBtn" aria-label="Sửa tên">
           <svg viewBox="0 0 14 14" fill="none"><path d="M9.5 1.8l2.7 2.7L4.8 12 1.5 12.5 2 9.2 9.5 1.8z" stroke="#443266" stroke-width="1.2" stroke-linejoin="round"/></svg>
         </button>
@@ -484,6 +516,105 @@
       <div class="stat"><div class="num" id="statTask">0</div><div class="lbl">việc đang chờ</div></div>
     </div>
   </div>
+
+  <section class="card guide-section" id="guideSection" style="display:none;">
+    <div class="card-head">
+      <h2><span class="head-icon teal"><svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.2" stroke="currentColor" stroke-width="1.3"/><path d="M6.1 6.3c0-1.1.9-1.9 1.9-1.9s1.9.7 1.9 1.7c0 1.3-1.5 1.4-1.5 2.7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="11.3" r=".18" fill="currentColor" stroke="currentColor" stroke-width="1.1"/></svg></span>Hướng dẫn sử dụng</h2>
+      <button class="guide-close-btn" id="guideCloseBtn" type="button" aria-label="Đóng hướng dẫn">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="guide-content">
+      <p>🔔 Lịch dạy · 📋 Kế hoạch bài dạy · ✅ Việc cần làm · ⏱️ Đồng hồ bấm giờ<br>🔒 Mọi dữ liệu lưu ngay trên máy — không cần đăng nhập.</p>
+
+      <h3>🚀 Mở lần đầu</h3>
+        <ul>
+          <li>Lần đầu mở app, app sẽ hỏi tên và giới tính để chào đúng tên mỗi lần vào.</li>
+          <li>Có thể bấm "Để sau" nếu chưa muốn nhập.</li>
+          <li>Muốn đổi tên sau này: bấm biểu tượng cây bút ở góc trên bên phải màn hình.</li>
+          <li>Cạnh đó có nút "Hướng dẫn SD" để mở lại mục này bất cứ lúc nào.</li>
+        </ul>
+
+        <h3>📅 Lịch lên lớp</h3>
+        <ul>
+          <li>Bấm nút "+ Tiết dạy" để thêm một tiết dạy.</li>
+          <li>Chọn: thứ trong tuần (chọn được nhiều thứ), buổi sáng/chiều, tiết thứ mấy, lớp dạy, phòng học, giờ bắt đầu – kết thúc.</li>
+          <li>Lịch sẽ tự lặp lại hằng tuần cho tới khi thầy cô sửa hoặc xoá.</li>
+          <li>Bấm vào một tiết đã có để sửa hoặc xoá.</li>
+        </ul>
+
+        <h3>📤 Lịch gửi KHBD</h3>
+        <ul>
+          <li>Bấm nút "+ Lịch gửi" để đặt lịch nhắc gửi kế hoạch bài dạy.</li>
+          <li>Nhập nội dung, chọn thứ cần gửi, chọn giờ nhắc.</li>
+          <li>Cũng tự lặp lại hằng tuần như lịch lên lớp.</li>
+        </ul>
+
+        <h3>✅ Việc cần làm</h3>
+        <ul>
+          <li>Bấm nút tròn "+ Thêm việc" ở góc màn hình để thêm việc mới.</li>
+          <li>Nhập nội dung, chọn ngày giờ, chọn lặp lại (không lặp / hằng ngày / hằng tuần / hằng tháng) và nhóm việc.</li>
+          <li>Dùng các thẻ Tất cả / Hôm nay / Sắp tới / Đã xong / Nhật ký để lọc xem việc theo từng loại.</li>
+          <li>Bấm vào một việc để sửa, tích chọn để đánh dấu đã xong, hoặc xoá nếu không cần nữa.</li>
+        </ul>
+
+        <h3>🔔 Bật thông báo nhắc việc</h3>
+        <p>Bấm "Bật thông báo" để app tự nhắc theo lịch sau:</p>
+        <table class="guide-table">
+          <thead><tr><th>Loại nhắc</th><th>Thời điểm nhắc</th></tr></thead>
+          <tbody>
+            <tr><td>🕖 Lịch dạy trong ngày</td><td>7h00 và 13h45 mỗi ngày — báo lịch dạy hôm nay/chiều nay.</td></tr>
+            <tr><td>📌 Việc cần làm</td><td>Nhắc trước 24 giờ, 12 giờ và 1 giờ so với giờ đã đặt (việc lặp hằng ngày, ví dụ uống thuốc, chỉ nhắc đúng giờ).</td></tr>
+            <tr><td>🔔 Hết tiết học</td><td>Có thể bật thêm để app báo ngay khi một tiết dạy vừa kết thúc.</td></tr>
+          </tbody>
+        </table>
+        <p class="guide-note">App chỉ nhắc được khi đang mở (kể cả chạy nền). Trên iPhone nên thêm app ra màn hình chính và mở lại đều đặn để nhận thông báo ổn định.</p>
+
+        <h3>⏱️ Đồng hồ</h3>
+        <ul>
+          <li><strong>Bấm giờ</strong> — đếm thời gian tăng dần.</li>
+          <li><strong>Đếm ngược</strong> — đặt sẵn giờ/phút/giây rồi đếm lùi.</li>
+        </ul>
+        <p>Ở chế độ đếm ngược, hết giờ app sẽ kêu chuông và rung liên tục cho đến khi bấm "Tắt chuông". Nên giữ màn hình sáng và app đang mở để nghe được chuông.</p>
+
+        <h3>🔄 Xuất / nhập dữ liệu</h3>
+        <p>Đây là nơi sao lưu, chuyển dữ liệu qua máy khác hoặc nhập nhanh nhiều dữ liệu cùng lúc:</p>
+        <ul>
+          <li><strong>Tải file mẫu</strong> — tải một file Excel trống đúng định dạng để điền dữ liệu mới.</li>
+          <li><strong>Xuất dữ liệu hiện tại</strong> — tải toàn bộ dữ liệu đang có ra file Excel (sao lưu hoặc sửa trên máy tính).</li>
+          <li><strong>Nhập dữ liệu</strong> — chọn một file Excel (file mẫu đã điền, file đã xuất ra rồi sửa, hoặc file trích xuất từ app hỗ trợ) để đưa dữ liệu vào app. Dòng có ID sẽ được cập nhật, dòng mới sẽ được thêm vào, không mất dữ liệu cũ.</li>
+          <li><strong>Trích xuất nhanh bằng app</strong> — mở công cụ hỗ trợ trích xuất nhanh thông tin (ví dụ từ thời khoá biểu, kế hoạch có sẵn) ra đúng định dạng file nhập liệu. Dùng xong tải file kết quả về rồi quay lại bấm "Nhập dữ liệu".</li>
+          <li><strong>Xoá dữ liệu cũ</strong> — dùng khi muốn thay hẳn bằng bộ dữ liệu mới, tránh trùng. Chỉ xoá lịch lên lớp, lịch gửi KHBD và việc cần làm; không ảnh hưởng tên và cài đặt thông báo.</li>
+        </ul>
+
+        <h3>💻➡️📱 Cách chuyển dữ liệu từ máy tính sang điện thoại</h3>
+        <ol>
+          <li>Trên máy tính, mở app, bấm "Xuất dữ liệu hiện tại" để tải file Excel.</li>
+          <li>Mở file bằng Excel/Google Sheets, sửa hoặc thêm dòng mới (không xoá cột ID của dòng có sẵn).</li>
+          <li>Lưu file, gửi sang điện thoại qua Gmail/Zalo hoặc Google Drive/OneDrive.</li>
+          <li>Trên điện thoại, mở app, bấm "Nhập dữ liệu" và chọn file vừa chuyển.</li>
+        </ol>
+
+        <h3>📲 Cài app ra màn hình chính</h3>
+        <p><strong>🍎 iPhone:</strong> Mở bằng Safari → bấm nút Chia sẻ → chọn "Thêm vào MH chính".</p>
+        <p><strong>🤖 Android:</strong> Mở bằng Chrome → bấm dấu ba chấm (⋮) góc trên → chọn "Cài đặt ứng dụng" hoặc "Thêm vào màn hình chính".</p>
+        <p class="guide-note">Nếu thông báo hay bị gián đoạn, vào Cài đặt → Pin/Ứng dụng → tìm Chrome → bật chạy nền không giới hạn.</p>
+
+        <h3>📌 Lưu ý chung</h3>
+        <ul>
+          <li>Mọi dữ liệu lưu ngay trên máy đang dùng, không tự đồng bộ sang máy khác — muốn dùng ở nhiều máy thì làm theo mục "Xuất / nhập dữ liệu".</li>
+          <li>Lịch lên lớp và lịch gửi KHBD tự lặp lại hằng tuần cho tới khi thầy cô sửa lại.</li>
+          <li>Nên mở lại app hằng ngày để thông báo hoạt động đều đặn.</li>
+        </ul>
+
+        <p style="text-align:center;font-weight:700;color:var(--primary-deep);margin-top:14px;">Chúc các thầy cô thành công! 🌸</p>
+
+        <div class="guide-contact">
+          Phát triển bởi: <strong>Nguyễn Hợi</strong> – Trường TH Bảo Đài số 2 – TP Bắc Ninh<br>
+          Hotline: 0967 834 824 · Email: hoinv_c1td_ln@bacgiang.edu.vn
+        </div>
+    </div>
+  </section>
 
   <section class="card">
     <details class="io-collapse" id="ioCollapse">
@@ -568,9 +699,15 @@
         <h2><span class="head-icon blue"><svg viewBox="0 0 16 16" fill="none"><path d="M8 2v1.2M8 13.3v1.2M4.5 5.5C4.5 3.6 6 2 8 2s3.5 1.6 3.5 3.5c0 3 1 4 1.3 4.6.2.4-.1.9-.6.9H3.8c-.5 0-.8-.5-.6-.9C3.5 9.5 4.5 8.5 4.5 5.5z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 12.8a1.6 1.6 0 003 0" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></span>Bật thông báo nhắc việc</h2>
         <svg class="io-chevron" viewBox="0 0 16 16" fill="none"><path d="M4 6.5l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </summary>
-      <p class="io-desc" id="notifDesc">Bật thông báo để app tự nhắc: 7h00 và 13h45 mỗi ngày báo lịch dạy hôm nay/chiều nay; việc cần làm được nhắc trước 24 giờ, 12 giờ và 1 giờ so với giờ đã đặt. Riêng việc lặp hàng ngày (VD uống thuốc) chỉ nhắc đúng giờ, không nhắc trước.</p>
+      <p class="io-desc" id="notifDesc">Bật thông báo để app tự nhắc: 7h00 và 13h45 mỗi ngày báo lịch dạy hôm nay/chiều nay; việc cần làm được nhắc trước 24 giờ, 12 giờ, 1 giờ và nhắc thêm ĐÚNG GIỜ đã đặt. Riêng việc lặp hàng ngày (VD uống thuốc) chỉ nhắc đúng giờ, không nhắc trước.</p>
       <div class="io-actions">
         <button class="btn btn-primary" id="enableNotifBtn">Bật thông báo</button>
+        <button class="btn btn-secondary" id="testNotifBtn">Gửi thông báo thử</button>
+      </div>
+      <div class="toggle-row" style="display:block;">
+        <div class="toggle-text-title">📅 Nhắc bằng Lịch điện thoại (chắc chắn nhất)</div>
+        <div class="toggle-text-sub" style="margin:4px 0 10px;">Thêm việc vào ứng dụng Lịch của iPhone/Android, Lịch sẽ tự báo chuông đúng giờ và trước 1 giờ, kể cả khi đã tắt app. Bấm biểu tượng 📅 cạnh từng việc để thêm một việc, hoặc bấm nút dưới để thêm tất cả việc chưa xong và lịch gửi KHBD.</div>
+        <button class="btn btn-primary" id="exportIcsBtn" style="width:100%;">📅 Thêm tất cả vào Lịch điện thoại</button>
       </div>
       <div class="toggle-row">
         <div>
@@ -582,7 +719,7 @@
           <span class="switch-slider"></span>
         </label>
       </div>
-      <p class="io-desc" style="margin:10px 0 0;">Lưu ý: trình duyệt chỉ gửi được thông báo khi app còn đang mở (kể cả chạy ở nền). Trên iPhone, hãy thêm app vào Màn hình chính (Safari → Chia sẻ → Thêm vào MH chính) và mở lại app đều đặn để thông báo hoạt động ổn định.</p>
+      <p class="io-desc" style="margin:10px 0 0;">Lưu ý: thông báo chỉ hoạt động khi app còn chạy (đang mở hoặc chạy nền). Nếu vuốt tắt hẳn app hoặc máy bật chế độ tiết kiệm pin, thông báo có thể trễ hoặc không hiện. Để ổn định: (1) thêm app vào Màn hình chính (Android: Chrome → ⋮ → Cài đặt ứng dụng; iPhone: Safari → Chia sẻ → Thêm vào MH chính), (2) cho phép thông báo, (3) tắt tiết kiệm pin cho Chrome/app, (4) để app mở ở nền. Bấm "Gửi thông báo thử" để kiểm tra. Cách chắc chắn nhất, kể cả khi đã tắt app: thêm việc vào Lịch điện thoại (mục 📅 ở trên).</p>
     </details>
   </section>
 
@@ -637,6 +774,8 @@
     Ứng dụng được phát triển bởi <span class="dev-name">Nguyễn Hợi</span><br>
     Tiểu học Bảo Đài số 2 · Bắc Ninh · SĐT: 0967 834 824
   </div>
+
+  <div class="visit-counter" id="visitCounter">👀 Tổng lượt truy cập: <span id="visitCountNum">…</span></div>
 </div>
 
 <button class="fab" id="fabBtn">
@@ -672,7 +811,7 @@
     <div class="field">
       <label>Lặp lại</label>
       <div class="seg" id="repeatPicker"></div>
-      <p class="repeat-note">Hàng ngày: nhắc đúng giờ mỗi ngày (VD uống thuốc), không nhắc trước. Hàng tuần/hàng tháng: nhắc trước 24 giờ, 12 giờ và 1 giờ (VD khám định kỳ).</p>
+      <p class="repeat-note">Hàng ngày: nhắc đúng giờ mỗi ngày (VD uống thuốc), không nhắc trước. Không lặp/hàng tuần/hàng tháng: nhắc trước 24 giờ, 12 giờ, 1 giờ và đúng giờ đã đặt (VD khám định kỳ).</p>
     </div>
     <div class="field"><label>Nhóm việc</label><div class="cat-picker" id="catPicker"></div></div>
   </div>
@@ -816,6 +955,7 @@
   var PIN='<svg viewBox="0 0 14 14" fill="none"><path d="M7 12.5S11.5 8.9 11.5 5.9A4.5 4.5 0 002.5 5.9C2.5 8.9 7 12.5 7 12.5Z" stroke="currentColor" stroke-width="1.2"/><circle cx="7" cy="5.8" r="1.6" stroke="currentColor" stroke-width="1.2"/></svg>';
   var SUN='<svg viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="2.8" stroke="currentColor" stroke-width="1.3"/><path d="M7 1v1.5M7 11.5V13M1 7h1.5M11.5 7H13M2.8 2.8l1 1M10.2 10.2l1 1M11.2 2.8l-1 1M3.8 10.2l-1 1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>';
   var MOON='<svg viewBox="0 0 14 14" fill="none"><path d="M11.5 8.4A5 5 0 015.6 2.5 5 5 0 107 12.5a5 5 0 004.5-4.1z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>';
+  var CALADD='<svg viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="11" rx="2.2" stroke="currentColor" stroke-width="1.4"/><path d="M2 6.5h12M5.5 1.8v2.4M10.5 1.8v2.4M8 8.6v3.2M6.4 10.2h3.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>';
   var TRASH='<svg viewBox="0 0 16 16" fill="none"><path d="M2.5 4.5H13.5M6 4.5V3a1 1 0 011-1h2a1 1 0 011 1v1.5M5 4.5L5.5 13a1 1 0 001 1h5a1 1 0 001-1l.5-8.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   var DOC='<svg viewBox="0 0 16 16" fill="none"><path d="M3.5 2h6l3 3v9h-9z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9.3 2v3.2h3.2" stroke="currentColor" stroke-width="1.3"/></svg>';
   var REPEAT='<svg viewBox="0 0 14 14" fill="none"><path d="M2 7a5 5 0 018.5-3.5M2.5 2v2h2M12 7a5 5 0 01-8.5 3.5M11.5 12v-2h-2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
@@ -916,9 +1056,41 @@
     }
   }
 
+  /* ---------- đếm tổng lượt truy cập (dùng chung cho mọi người, qua CounterAPI - không cần máy chủ riêng) ---------- */
+  var VISIT_NAMESPACE='Ứng dụng nhắc việc cho giáo viên';
+  var VISIT_COUNTER_NAME='app-opens';
+  var VISIT_CACHE_KEY='gv_visit_count_cache_v1';
+  function renderVisitCount(){
+    var el=document.getElementById('visitCountNum');
+    if(!el)return;
+    var cached=null;
+    try{cached=localStorage.getItem(VISIT_CACHE_KEY);}catch(e){}
+    if(cached)el.textContent=cached;
+    if(typeof fetch==='undefined')return;
+    var url='https://api.counterapi.dev/v1/'+encodeURIComponent(VISIT_NAMESPACE)+'/'+encodeURIComponent(VISIT_COUNTER_NAME)+'/up';
+    fetch(url).then(function(r){return r.json();}).then(function(data){
+      var n=data&&data.data&&typeof data.data.up_count!=='undefined'?data.data.up_count:null;
+      if(n!=null){
+        el.textContent=n;
+        try{localStorage.setItem(VISIT_CACHE_KEY,String(n));}catch(e){}
+      }
+    }).catch(function(){ /* không lấy được số chung - vẫn giữ số đã lưu tạm (nếu có) */ });
+  }
+
   function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,8);}
   function pad(n){return n<10?'0'+n:''+n;}
   function todayStr(){var d=new Date();return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());}
+
+  /* ---------- tự nhận biết sang ngày mới (kể cả khi app chạy nền) ---------- */
+  var currentDateKey=todayStr();
+  function checkDateChange(){
+    var nd=todayStr();
+    if(nd!==currentDateKey){
+      currentDateKey=nd;
+      selectedDay=new Date().getDay();
+      render();
+    }
+  }
   function esc(s){var d=document.createElement('div');d.textContent=s==null?'':s;return d.innerHTML;}
   function catById(id){for(var i=0;i<CATS.length;i++)if(CATS[i].id===id)return CATS[i];return CATS[0];}
 
@@ -1236,14 +1408,69 @@
     ['Kiên nhẫn là chìa khoá mở mọi cánh cửa.', 'Ngạn ngữ'],
     ['Mỗi ngày tiến bộ một chút, lâu dần thành điều phi thường.', 'Ngạn ngữ'],
     ['Gieo thói quen, gặt tính cách; gieo tính cách, gặt số phận.', 'Ngạn ngữ'],
-    ['Muốn đi nhanh hãy đi một mình, muốn đi xa hãy đi cùng nhau.', 'Ngạn ngữ châu Phi']
+    ['Muốn đi nhanh hãy đi một mình, muốn đi xa hãy đi cùng nhau.', 'Ngạn ngữ châu Phi'],
+    ['Tôn sư trọng đạo.', 'Tục ngữ Việt Nam'],
+    ['Nhất tự vi sư, bán tự vi sư.', 'Tục ngữ Việt Nam'],
+    ['Muốn sang thì bắc cầu Kiều, muốn con hay chữ thì yêu lấy thầy.', 'Ca dao Việt Nam'],
+    ['Ăn quả nhớ kẻ trồng cây.', 'Tục ngữ Việt Nam'],
+    ['Đi một ngày đàng, học một sàng khôn.', 'Tục ngữ Việt Nam'],
+    ['Học thầy không tày học bạn.', 'Tục ngữ Việt Nam'],
+    ['Uống nước nhớ nguồn.', 'Tục ngữ Việt Nam'],
+    ['Kiến tha lâu cũng đầy tổ.', 'Tục ngữ Việt Nam'],
+    ['Thất bại là mẹ thành công.', 'Ngạn ngữ'],
+    ['Trẻ em hôm nay, thế giới ngày mai.', 'Khẩu hiệu vì trẻ em'],
+    ['Người thầy giỏi nhất là người biết khơi dậy điều tốt đẹp trong học trò.', 'Ngạn ngữ'],
+    ['Giáo dục không phải là đổ đầy một cái bình, mà là thắp sáng một ngọn lửa.', 'William Butler Yeats'],
+    ['Nếu bạn nghĩ giáo dục tốn kém, hãy thử sự dốt nát.', 'Derek Bok'],
+    ['Người thầy tốt giống như ngọn nến, tự cháy để soi đường cho người khác.', 'Ngạn ngữ'],
+    ['Dạy học là nghề tạo ra mọi nghề khác.', 'Ngạn ngữ'],
+    ['Trẻ em cần nhất không phải là những nhà phê bình mà là những người truyền cảm hứng.', 'Ngạn ngữ'],
+    ['Một người thầy ảnh hưởng đến sự vĩnh hằng, không ai biết trước ảnh hưởng ấy dừng lại ở đâu.', 'Henry Adams'],
+    ['Hãy dạy trẻ con cách suy nghĩ, đừng dạy chúng nghĩ gì.', 'Margaret Mead'],
+    ['Sự nghiệp trồng người là sự nghiệp trăm năm.', 'Hồ Chí Minh'],
+    ['Không có việc gì khó, chỉ sợ lòng không bền.', 'Hồ Chí Minh'],
+    ['Học, học nữa, học mãi.', 'V. I. Lenin'],
+    ['Sách là ngọn đèn sáng bất diệt của trí tuệ con người.', 'Ngạn ngữ'],
+    ['Người thầy vĩ đại nhất là kinh nghiệm.', 'Ngạn ngữ'],
+    ['Trồng cây gây rừng, trồng người xây tương lai.', 'Ngạn ngữ'],
+    ['Mỗi đứa trẻ là một bông hoa, người thầy là người làm vườn.', 'Ngạn ngữ'],
+    ['Kỷ luật là cầu nối giữa mục tiêu và thành tựu.', 'Jim Rohn'],
+    ['Bạn càng dạy nhiều, bạn càng học nhiều.', 'Ngạn ngữ'],
+    ['Đừng ngại chậm, chỉ ngại dừng lại.', 'Khổng Tử'],
+    ['Người thầy tốt nhất là người biến kiến thức thành niềm vui.', 'Ngạn ngữ'],
+    ['Trí tuệ bắt đầu từ sự ngạc nhiên.', 'Socrates'],
+    ['Giáo dục là chìa khoá mở ra mọi cánh cửa của tương lai.', 'Ngạn ngữ'],
+    ['Người thầy chạm vào tương lai, họ không bao giờ biết ảnh hưởng của mình dừng lại ở đâu.', 'Ngạn ngữ'],
+    ['Càng cho đi, ta càng nhận lại nhiều hơn - nghề giáo là như vậy.', 'Ngạn ngữ'],
+    ['Yêu trẻ, trẻ sẽ yêu ta; kính người, người sẽ kính lại ta.', 'Ngạn ngữ'],
+    ['Mỗi ngày đến trường là một ngày vui.', 'Khẩu hiệu ngành giáo dục'],
+    ['Tất cả vì học sinh thân yêu.', 'Khẩu hiệu ngành giáo dục'],
+    ['Kiên trì là con đường ngắn nhất dẫn đến thành công.', 'Ngạn ngữ'],
+    ['Không ai đánh thuế bạn vì đã cố gắng thêm một chút mỗi ngày.', 'Ngạn ngữ'],
+    ['Người thầy giỏi mở ra cánh cửa, còn bước vào là tự học trò.', 'Ngạn ngữ Trung Hoa'],
+    ['Dạy trẻ điều đúng từ nhỏ, khi lớn chúng sẽ không rời xa điều đó.', 'Kinh Thánh (Châm ngôn)'],
+    ['Hạnh phúc của người thầy là thấy học trò trưởng thành từng ngày.', 'Ngạn ngữ'],
+    ['Cho đi một ngọn nến để thắp sáng ngọn nến khác không làm nó vơi đi ánh sáng.', 'Ngạn ngữ'],
+    ['Người thầy trồng hạt giống hôm nay, thu hoạch là cả một thế hệ.', 'Ngạn ngữ'],
+    ['Chỉ cần cố gắng, không gì là không thể.', 'Ngạn ngữ'],
+    ['Sự kiên nhẫn của người thầy là món quà quý giá nhất cho học trò.', 'Ngạn ngữ'],
+    ['Một lời động viên đúng lúc có thể thay đổi cả cuộc đời một đứa trẻ.', 'Ngạn ngữ'],
+    ['Người thầy không dạy học trò suy nghĩ như mình, mà dạy học trò biết tự suy nghĩ.', 'Ngạn ngữ'],
+    ['Thành công không phải là đích đến, mà là hành trình mỗi ngày cố gắng.', 'Ngạn ngữ'],
+    ['Trường học không chỉ dạy chữ, mà còn dạy làm người.', 'Ngạn ngữ']
   ];
 
+  var lastQuoteIdx=-1;
+  function pickQuoteIndex(){
+    if(QUOTES.length<=1)return 0;
+    var idx;
+    do{idx=Math.floor(Math.random()*QUOTES.length);}while(idx===lastQuoteIdx);
+    return idx;
+  }
   function renderQuote(){
-    var d = new Date();
-    var start = new Date(d.getFullYear(), 0, 0);
-    var doy = Math.floor((d - start) / 86400000);
-    var q = QUOTES[doy % QUOTES.length];
+    var idx=pickQuoteIndex();
+    lastQuoteIdx=idx;
+    var q = QUOTES[idx];
     document.getElementById('quoteText').textContent = '\u201C' + q[0] + '\u201D';
     document.getElementById('quoteAuthor').textContent = '\u2014 ' + q[1];
   }
@@ -1368,6 +1595,7 @@
     var h='<li class="item'+(done?' done':'')+'"><div class="cat-bar" style="background:'+c.color+'"></div>';
     h+='<button class="check'+(done?' checked':'')+'" data-action="toggle" data-id="'+item.id+'" aria-label="Hoàn thành"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 11.7L13 4.5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>';
     h+='<div class="item-body" data-action="open" data-id="'+item.id+'"><div class="item-title">'+esc(item.title)+'</div><div class="item-meta">'+meta+'<span class="meta-chip">'+c.name+'</span></div></div>';
+    if(item.date&&item.time&&!done)h+='<button class="cal-btn" data-action="ics" data-id="'+item.id+'" aria-label="Thêm vào Lịch điện thoại">'+CALADD+'</button>';
     h+='<button class="del-btn" data-action="delete" data-id="'+item.id+'" aria-label="Xoá">'+TRASH+'</button></li>';
     return h;
   }
@@ -1437,10 +1665,12 @@
 
   function render(){renderHero();renderDayChips();renderSchedule();renderKhbd();renderTasks();}
 
-  function toast(msg){
+  var toastTimer=null;
+  function toast(msg,ms){
     var t=document.getElementById('toast');
     t.textContent=msg;t.classList.add('show');
-    setTimeout(function(){t.classList.remove('show');},1700);
+    clearTimeout(toastTimer);
+    toastTimer=setTimeout(function(){t.classList.remove('show');},ms||1700);
   }
 
   function setType(type){
@@ -1597,6 +1827,7 @@
     var item=items.find(function(i){return i.id===id;});if(!item)return;
     if(a==='toggle'){toggleItemDone(item);saveItems();render();}
     else if(a==='open')openSheet({type:'task',item:item});
+    else if(a==='ics')exportItemIcs(item);
     else{items=items.filter(function(i){return i.id!==id;});saveItems();render();toast('Đã xoá.');}
   });
 
@@ -1765,11 +1996,36 @@
       localStorage.setItem(NOTIF_KEY,JSON.stringify(notifiedMap));
     }catch(e){}
   }
+  /* Service Worker: bắt buộc trên Android/Chrome (new Notification() bị chặn), ổn định hơn trên iOS PWA */
+  function registerSW(){
+    if(!('serviceWorker' in navigator))return;
+    try{navigator.serviceWorker.register('sw.js').catch(function(){});}catch(e){}
+  }
+  function showNotif(key,title,body){
+    var opts={body:body,tag:key,icon:'icon-192.png',badge:'icon-192.png',requireInteraction:true,renotify:true,vibrate:[300,150,300,150,300],data:{url:'./'}};
+    function legacy(){
+      return new Promise(function(res,rej){
+        try{new Notification(title,{body:body,tag:key,icon:'icon-192.png'});res();}catch(e){rej(e);}
+      });
+    }
+    if('serviceWorker' in navigator){
+      return navigator.serviceWorker.getRegistration().then(function(reg){
+        if(!reg)return legacy();
+        return navigator.serviceWorker.ready.then(function(r){return r.showNotification(title,opts);});
+      }).catch(function(){return legacy();});
+    }
+    return legacy();
+  }
   function fireNotif(key,title,body){
     if(notifiedMap.hasOwnProperty(key))return;
     notifiedMap[key]=Date.now();persistNotified();
+    /* nếu app đang mở trước mắt: hiện thêm thanh báo trong app + rung */
+    if(document.visibilityState==='visible'){
+      toast('🔔 '+title+' — '+body,9000);
+      try{if(navigator.vibrate)navigator.vibrate([300,150,300]);}catch(e){}
+    }
     if(typeof Notification==='undefined'||Notification.permission!=='granted')return;
-    try{new Notification(title,{body:body,tag:key});}catch(e){}
+    showNotif(key,title,body).catch(function(){});
   }
   function inWindow(now,hh,mm,graceMin){
     var t=new Date(now);t.setHours(hh,mm,0,0);
@@ -1801,15 +2057,17 @@
       }
     }
   }
-  var REMIND_STAGES=[{h:24,n:1},{h:12,n:2},{h:1,n:3}];
+  var REMIND_STAGES=[{h:24,n:1,grace:10},{h:12,n:2,grace:10},{h:1,n:3,grace:10},{h:0,n:4,grace:45}];
+  function stageTitle(st,title){return st.n===4?'⏰ Đến giờ: '+title:'Nhắc việc: '+title;}
+  function stageSuffix(st){return st.n===4?' (đến giờ rồi)':(st.n===3?' (sắp tới giờ)':' (nhắc lần '+st.n+')');}
   function checkTaskReminders(now){
     items.forEach(function(it){
       if(!it.date||!it.time||itemDoneForOccurrence(it))return;
       if(it.repeat==='daily'){
         var target=new Date(todayStr()+'T'+it.time+':00');
         var key='task-daily-'+it.id+'-'+todayStr();
-        if(now>=target&&(now-target)<=10*60000&&!notifiedMap.hasOwnProperty(key)){
-          fireNotif(key,'Nhắc việc hôm nay',it.title+' - '+it.time);
+        if(now>=target&&(now-target)<=45*60000&&!notifiedMap.hasOwnProperty(key)){
+          fireNotif(key,'⏰ Đến giờ: '+it.title,'Hôm nay lúc '+it.time);
         }
         return;
       }
@@ -1820,8 +2078,8 @@
       REMIND_STAGES.forEach(function(st){
         var remindAt=new Date(target2.getTime()-st.h*3600000);
         var key2='task-'+it.id+'-'+occDate+'-s'+st.n;
-        if(now>=remindAt&&(now-remindAt)<=10*60000&&!notifiedMap.hasOwnProperty(key2)){
-          fireNotif(key2,'Nhắc việc: '+it.title,'Lịch vào '+occDate.split('-').reverse().join('/')+' lúc '+it.time+(st.n<3?' (nhắc lần '+st.n+')':' (sắp tới giờ)'));
+        if(now>=remindAt&&(now-remindAt)<=st.grace*60000&&!notifiedMap.hasOwnProperty(key2)){
+          fireNotif(key2,stageTitle(st,it.title),'Lịch vào '+occDate.split('-').reverse().join('/')+' lúc '+it.time+stageSuffix(st));
         }
       });
     });
@@ -1838,8 +2096,8 @@
         REMIND_STAGES.forEach(function(st){
           var remindAt=new Date(target.getTime()-st.h*3600000);
           var key='khbd-'+k.id+'-'+wd+'-'+occDate+'-s'+st.n;
-          if(now>=remindAt&&(now-remindAt)<=10*60000&&!notifiedMap.hasOwnProperty(key)){
-            fireNotif(key,'Nhắc gửi KHBD: '+k.title,'Hạn vào '+occDate.split('-').reverse().join('/')+' lúc '+k.time+(st.n<3?' (nhắc lần '+st.n+')':' (sắp tới giờ)'));
+          if(now>=remindAt&&(now-remindAt)<=st.grace*60000&&!notifiedMap.hasOwnProperty(key)){
+            fireNotif(key,(st.n===4?'⏰ Đến hạn gửi KHBD: ':'Nhắc gửi KHBD: ')+k.title,'Hạn vào '+occDate.split('-').reverse().join('/')+' lúc '+k.time+stageSuffix(st));
           }
         });
       });
@@ -1878,7 +2136,17 @@
   if(enableNotifBtnEl){
     enableNotifBtnEl.addEventListener('click',function(){
       if(typeof Notification==='undefined')return;
-      Notification.requestPermission().then(function(){updateNotifUI();notifTick();});
+      Notification.requestPermission().then(function(){registerSW();updateNotifUI();notifTick();});
+    });
+  }
+  var testNotifBtnEl=document.getElementById('testNotifBtn');
+  if(testNotifBtnEl){
+    testNotifBtnEl.addEventListener('click',function(){
+      if(typeof Notification==='undefined'){toast('Trình duyệt không hỗ trợ thông báo.',3500);return;}
+      if(Notification.permission!=='granted'){toast('Chưa bật thông báo - hãy bấm "Bật thông báo" trước.',3500);return;}
+      showNotif('test-'+Date.now(),'Thông báo thử','Nếu thầy/cô thấy thông báo này thì app đã gửi được thông báo trên máy này.')
+        .then(function(){toast('Đã gửi thông báo thử.',2500);})
+        .catch(function(){toast('Không gửi được thông báo. Hãy kiểm tra Cài đặt thông báo của trình duyệt.',4500);});
     });
   }
   loadNotifyEndClass();
@@ -1890,6 +2158,128 @@
       saveNotifyEndClass(notifyEndClass);
     });
   }
+
+
+  /* ---------- xuất lịch (.ics) để Lịch điện thoại tự báo chuông ---------- */
+  /* ICS-BEGIN */
+  var ICS_ALARMS_ONCE=[0,60];  /* phút trước giờ hẹn: 0 = đúng giờ, 60 = trước 1 giờ. Sửa số ở đây nếu muốn đổi. */
+  var ICS_ALARMS_DAILY=[0];
+  var ICS_EVENT_MIN=30;        /* độ dài mỗi sự kiện trong Lịch (phút) */
+  var ICS_BYDAY=['SU','MO','TU','WE','TH','FR','SA'];
+  function icsEsc(t){return String(t==null?'':t).replace(/\\/g,'\\\\').replace(/\r?\n/g,'\\n').replace(/;/g,'\\;').replace(/,/g,'\\,');}
+  function icsFold(line){
+    var enc=new TextEncoder(),out='',cur='',bytes=0,first=true;
+    Array.from(line).forEach(function(ch){
+      var b=enc.encode(ch).length,limit=first?75:74;
+      if(bytes+b>limit){out+=cur+'\r\n ';cur='';bytes=0;first=false;}
+      cur+=ch;bytes+=b;
+    });
+    return out+cur;
+  }
+  function icsLocal(dateStr,timeStr,addMin){
+    var d=new Date(dateStr+'T'+timeStr+':00');
+    if(isNaN(d.getTime()))return null;
+    d=new Date(d.getTime()+(addMin||0)*60000);
+    return d.getFullYear()+pad(d.getMonth()+1)+pad(d.getDate())+'T'+pad(d.getHours())+pad(d.getMinutes())+'00';
+  }
+  function icsStamp(){return new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');}
+  function icsAlarmLines(mins,title){
+    var L=[];
+    mins.forEach(function(m){
+      L.push('BEGIN:VALARM','ACTION:DISPLAY',
+        'DESCRIPTION:'+icsEsc(m===0?'Đến giờ: '+title:'Còn '+m+' phút nữa: '+title),
+        'TRIGGER:'+(m===0?'PT0S':'-PT'+m+'M'),'END:VALARM');
+    });
+    return L;
+  }
+  function icsEventForItem(it,stamp,seq){
+    if(!it||!it.date||!it.time)return null;
+    var start=icsLocal(it.date,it.time,0),end=icsLocal(it.date,it.time,ICS_EVENT_MIN);
+    if(!start)return null;
+    var rep=it.repeat||'none';
+    var L=['BEGIN:VEVENT','UID:nhacviec-task-'+it.id+'@nhacviec','DTSTAMP:'+stamp,'SEQUENCE:'+seq,
+      'DTSTART:'+start,'DTEND:'+end,'SUMMARY:'+icsEsc(it.title)];
+    if(rep==='daily')L.push('RRULE:FREQ=DAILY');
+    else if(rep==='weekly')L.push('RRULE:FREQ=WEEKLY');
+    else if(rep==='monthly')L.push('RRULE:FREQ=MONTHLY');
+    try{var c=catById(it.category);if(c&&c.name)L.push('DESCRIPTION:'+icsEsc('Nhóm: '+c.name));}catch(e){}
+    L=L.concat(icsAlarmLines(rep==='daily'?ICS_ALARMS_DAILY:ICS_ALARMS_ONCE,it.title));
+    L.push('END:VEVENT');
+    return L;
+  }
+  function icsEventForKhbd(k,stamp,seq){
+    var days=(k.days||[]).filter(function(d){return d>=0&&d<=6;});
+    if(!k.time||!days.length)return null;
+    var base=new Date(todayStr()+'T00:00:00'),first=null;
+    for(var i=0;i<7&&!first;i++){
+      var d=new Date(base.getTime());d.setDate(d.getDate()+i);
+      if(days.indexOf(d.getDay())!==-1)first=d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+    }
+    var start=icsLocal(first,k.time,0),end=icsLocal(first,k.time,ICS_EVENT_MIN);
+    if(!start)return null;
+    var title='Gửi KHBD: '+k.title;
+    var L=['BEGIN:VEVENT','UID:nhacviec-khbd-'+k.id+'@nhacviec','DTSTAMP:'+stamp,'SEQUENCE:'+seq,
+      'DTSTART:'+start,'DTEND:'+end,'SUMMARY:'+icsEsc(title),
+      'RRULE:FREQ=WEEKLY;BYDAY='+days.map(function(d){return ICS_BYDAY[d];}).join(',')];
+    L=L.concat(icsAlarmLines(ICS_ALARMS_ONCE,title));
+    L.push('END:VEVENT');
+    return L;
+  }
+  function icsBuild(eventLineGroups){
+    var head=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Nhac viec GV//VI','CALSCALE:GREGORIAN','X-WR-CALNAME:Nhắc việc GV'];
+    var all=head.concat.apply(head,eventLineGroups).concat(['END:VCALENDAR']);
+    return all.map(icsFold).join('\r\n')+'\r\n';
+  }
+  /* ICS-END */
+
+  function isIOSDevice(){
+    return /iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  }
+  function downloadIcsFallback(blob,filename){
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a');
+    a.href=url;a.download=filename;a.style.display='none';
+    document.body.appendChild(a);a.click();
+    setTimeout(function(){try{document.body.removeChild(a);URL.revokeObjectURL(url);}catch(e){}},60000);
+  }
+  function deliverIcs(text,filename,msg){
+    var blob=new Blob([text],{type:'text/calendar;charset=utf-8'});
+    var file=null;
+    try{file=new File([blob],filename,{type:'text/calendar'});}catch(e){}
+    /* iPhone: mở bảng chia sẻ để chọn "Lịch"; máy khác hoặc khi không dùng được: tải file .ics về */
+    if(isIOSDevice()&&file&&navigator.share&&navigator.canShare&&navigator.canShare({files:[file]})){
+      navigator.share({files:[file],title:'Nhắc việc'}).then(function(){toast(msg,5000);}).catch(function(err){
+        if(err&&err.name==='AbortError')return;
+        downloadIcsFallback(blob,filename);toast(msg,5000);
+      });
+      return;
+    }
+    downloadIcsFallback(blob,filename);
+    toast(msg,5000);
+  }
+  function exportItemIcs(it){
+    var start=new Date(it.date+'T'+it.time+':00');
+    var rep=it.repeat&&it.repeat!=='none';
+    if(!rep&&start<new Date()){toast('Giờ hẹn này đã qua nên Lịch sẽ không báo. Hãy sửa lại ngày giờ.',4500);return;}
+    var seq=Math.floor(Date.now()/1000),stamp=icsStamp();
+    var ev=icsEventForItem(it,stamp,seq);
+    if(!ev){toast('Việc này chưa có ngày giờ.');return;}
+    deliverIcs(icsBuild([ev]),'nhac-viec.ics','Mở file rồi chọn "Thêm vào Lịch" / "Add to Calendar".');
+  }
+  function exportAllIcs(){
+    var now=new Date(),seq=Math.floor(Date.now()/1000),stamp=icsStamp(),groups=[],nTask=0,nKhbd=0;
+    items.forEach(function(it){
+      if(!it.date||!it.time)return;
+      var rep=it.repeat&&it.repeat!=='none';
+      if(!rep&&(it.done||new Date(it.date+'T'+it.time+':00')<now))return;
+      var ev=icsEventForItem(it,stamp,seq);if(ev){groups.push(ev);nTask++;}
+    });
+    khbds.forEach(function(k){var ev=icsEventForKhbd(k,stamp,seq);if(ev){groups.push(ev);nKhbd++;}});
+    if(!groups.length){toast('Chưa có việc nào có ngày giờ sắp tới để thêm vào Lịch.',4000);return;}
+    deliverIcs(icsBuild(groups),'nhac-viec-tat-ca.ics','Đã chuẩn bị '+nTask+' việc và '+nKhbd+' lịch KHBD. Chọn "Thêm tất cả" / "Add All" trong Lịch.');
+  }
+  var exportIcsBtnEl=document.getElementById('exportIcsBtn');
+  if(exportIcsBtnEl)exportIcsBtnEl.addEventListener('click',exportAllIcs);
 
   /* ---------- đồng hồ: bấm giờ & đếm ngược ---------- */
   (function(){
@@ -2023,7 +2413,7 @@
           cdStartAlarmLoop();
           toast('Đã hết giờ đếm ngược!');
           if(typeof Notification!=='undefined'&&Notification.permission==='granted'){
-            try{new Notification('Hết giờ đếm ngược',{body:'Thời gian đếm ngược đã kết thúc.'});}catch(e){}
+            showNotif('countdown-'+Date.now(),'Hết giờ đếm ngược','Thời gian đếm ngược đã kết thúc.').catch(function(){});
           }
           if(cdStartBtn){cdStartBtn.style.display='';cdStartBtn.textContent='Bắt đầu';}
           if(cdPauseBtn)cdPauseBtn.style.display='none';
@@ -2097,6 +2487,20 @@
     document.getElementById('nameSheet').classList.remove('show');
   }
   document.getElementById('editNameBtn').addEventListener('click',function(){openNameSheet(true);});
+  function openGuideSection(){
+    var sec=document.getElementById('guideSection');
+    if(!sec)return;
+    sec.style.display='';
+    sec.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function closeGuideSection(){
+    var sec=document.getElementById('guideSection');
+    if(sec)sec.style.display='none';
+  }
+  var userGuideBtnEl=document.getElementById('userGuideBtn');
+  if(userGuideBtnEl)userGuideBtnEl.addEventListener('click',openGuideSection);
+  var guideCloseBtnEl=document.getElementById('guideCloseBtn');
+  if(guideCloseBtnEl)guideCloseBtnEl.addEventListener('click',closeGuideSection);
   document.getElementById('nameSkipBtn').addEventListener('click',closeNameSheet);
   document.getElementById('nameCancelBtn').addEventListener('click',closeNameSheet);
   document.getElementById('nameBackdrop').addEventListener('click',closeNameSheet);
@@ -2116,8 +2520,16 @@
   loadData();loadUserName();loadGender();loadLogs();loadLogRetention();pruneLogs();render();
   if(!userName)openNameSheet(false);
   else if(!gender)openNameSheet(true);
-  loadNotifyEndClass();loadNotified();updateNotifUI();notifTick();
-  setInterval(notifTick,30000);
+  registerSW();loadNotifyEndClass();loadNotified();updateNotifUI();notifTick();
+  setInterval(notifTick,15000);
+  setInterval(checkDateChange,30000);
+  setInterval(renderQuote,60000);
+  document.addEventListener('visibilitychange',function(){
+    if(document.visibilityState==='visible'){checkDateChange();notifTick();}
+  });
+  window.addEventListener('focus',function(){checkDateChange();notifTick();});
+  window.addEventListener('pageshow',function(){checkDateChange();notifTick();});
+  renderVisitCount();
 })();
 </script>
 </body>

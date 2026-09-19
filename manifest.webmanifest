@@ -1,0 +1,14 @@
+{
+  "name": "Ứng dụng nhắc việc dành cho giáo viên",
+  "short_name": "Nhắc việc GV",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F3F1FB",
+  "theme_color": "#8C489F",
+  "lang": "vi",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
