@@ -525,7 +525,7 @@
       </button>
     </div>
     <div class="guide-content">
-      <p>🔔 Lịch dạy · 📋 Kế hoạch bài dạy · ✅ Việc cần làm · ⏱️ Đồng hồ bấm giờ<br>🔒 Mọi dữ liệu lưu ngay trên máy — không cần đăng nhập.</p>
+      <p>🔔 Lịch dạy · 📋 Kế hoạch bài dạy · ✅ Việc cần làm · 📅 Nhắc bằng Lịch điện thoại · ⏱️ Đồng hồ bấm giờ<br>🔒 Mọi dữ liệu lưu ngay trên máy — không cần đăng nhập.</p>
 
       <h3>🚀 Mở lần đầu</h3>
         <ul>
@@ -556,6 +556,7 @@
           <li>Nhập nội dung, chọn ngày giờ, chọn lặp lại (không lặp / hằng ngày / hằng tuần / hằng tháng) và nhóm việc.</li>
           <li>Dùng các thẻ Tất cả / Hôm nay / Sắp tới / Đã xong / Nhật ký để lọc xem việc theo từng loại.</li>
           <li>Bấm vào một việc để sửa, tích chọn để đánh dấu đã xong, hoặc xoá nếu không cần nữa.</li>
+          <li>Việc nào đã có ngày giờ sẽ có biểu tượng 📅 nhỏ bên cạnh nút xoá: bấm để thêm việc đó vào Lịch điện thoại (xem mục "Nhắc bằng Lịch điện thoại" bên dưới).</li>
         </ul>
 
         <h3>🔔 Bật thông báo nhắc việc</h3>
@@ -564,11 +565,28 @@
           <thead><tr><th>Loại nhắc</th><th>Thời điểm nhắc</th></tr></thead>
           <tbody>
             <tr><td>🕖 Lịch dạy trong ngày</td><td>7h00 và 13h45 mỗi ngày — báo lịch dạy hôm nay/chiều nay.</td></tr>
-            <tr><td>📌 Việc cần làm</td><td>Nhắc trước 24 giờ, 12 giờ và 1 giờ so với giờ đã đặt (việc lặp hằng ngày, ví dụ uống thuốc, chỉ nhắc đúng giờ).</td></tr>
+            <tr><td>📌 Việc cần làm</td><td>Nhắc trước 24 giờ, 12 giờ, 1 giờ và nhắc thêm <strong>đúng giờ</strong> đã đặt (việc lặp hằng ngày, ví dụ uống thuốc, chỉ nhắc đúng giờ).</td></tr>
+            <tr><td>📤 Lịch gửi KHBD</td><td>Nhắc trước 24 giờ, 12 giờ, 1 giờ và đúng giờ hạn gửi.</td></tr>
             <tr><td>🔔 Hết tiết học</td><td>Có thể bật thêm để app báo ngay khi một tiết dạy vừa kết thúc.</td></tr>
           </tbody>
         </table>
-        <p class="guide-note">App chỉ nhắc được khi đang mở (kể cả chạy nền). Trên iPhone nên thêm app ra màn hình chính và mở lại đều đặn để nhận thông báo ổn định.</p>
+        <p>Sau khi bật, bấm <strong>"Gửi thông báo thử"</strong> để kiểm tra máy đã nhận được thông báo chưa. Khi app đang mở trước mắt, app còn hiện thêm thanh báo trong màn hình và rung máy.</p>
+        <p class="guide-note">Thông báo trong app chỉ hoạt động khi app còn chạy (đang mở hoặc chạy nền). Nếu thầy cô vuốt tắt hẳn app, hoặc máy bật chế độ tiết kiệm pin, thông báo có thể trễ hoặc không hiện — nhất là trên iPhone. Muốn chắc chắn có chuông đúng giờ, hãy dùng thêm cách "Nhắc bằng Lịch điện thoại" ngay bên dưới.</p>
+
+        <h3>📅 Nhắc bằng Lịch điện thoại (chắc chắn nhất)</h3>
+        <p>App đưa việc vào ứng dụng <strong>Lịch</strong> có sẵn của iPhone hoặc Android. Lịch sẽ tự báo chuông <strong>đúng giờ</strong> và <strong>trước 1 giờ</strong>, kể cả khi đã tắt app hoặc khoá máy. Việc lặp hằng ngày chỉ báo đúng giờ.</p>
+        <ul>
+          <li><strong>Thêm một việc:</strong> bấm biểu tượng 📅 cạnh việc đó trong danh sách "Việc cần làm".</li>
+          <li><strong>Thêm tất cả:</strong> mở mục "Bật thông báo nhắc việc" → bấm "Thêm tất cả vào Lịch điện thoại". App sẽ thêm mọi việc chưa xong còn giờ hẹn sắp tới và lịch gửi KHBD (lặp hằng tuần). Lịch lên lớp không được thêm để tránh làm rối Lịch.</li>
+        </ul>
+        <p><strong>🍎 iPhone:</strong></p>
+        <ol>
+          <li>Bấm 📅 hoặc "Thêm tất cả vào Lịch điện thoại".</li>
+          <li>Trong bảng chia sẻ hiện ra, chọn <strong>Lịch</strong>. Nếu không thấy, chọn "Lưu vào Tệp".</li>
+          <li>Nếu đã lưu vào Tệp: mở file <strong>.ics</strong> vừa lưu → bấm <strong>Thêm tất cả</strong>.</li>
+        </ol>
+        <p><strong>🤖 Android:</strong> file .ics sẽ tự tải về. Bấm vào thông báo "Đã tải xuống" (hoặc mở trong mục Tải xuống) → chọn <strong>Google Calendar</strong> → lưu.</p>
+        <p class="guide-note">Cần biết: (1) Thêm lại cùng một việc sẽ cập nhật sự kiện cũ, không bị nhân đôi. (2) Nếu sửa hoặc xoá việc trong app, Lịch không tự đổi theo — thầy cô xoá sự kiện cũ trong Lịch hoặc thêm lại. (3) Trên iPhone, kiểm tra Cài đặt → Thông báo → Lịch đã bật, và chế độ Tập trung (Focus) không chặn thông báo. Nếu mở app từ màn hình chính mà nút 📅 không hiện gì, hãy thử mở app bằng Safari rồi bấm lại.</p>
 
         <h3>⏱️ Đồng hồ</h3>
         <ul>
@@ -596,15 +614,15 @@
         </ol>
 
         <h3>📲 Cài app ra màn hình chính</h3>
-        <p><strong>🍎 iPhone:</strong> Mở bằng Safari → bấm nút Chia sẻ → chọn "Thêm vào MH chính".</p>
+        <p><strong>🍎 iPhone:</strong> Mở bằng Safari → bấm nút Chia sẻ → chọn "Thêm vào MH chính". Sau đó luôn mở app từ <strong>biểu tượng ngoài màn hình chính</strong> rồi mới bấm "Bật thông báo" (cần iPhone dùng iOS 16.4 trở lên; nếu mở bằng Safari, iPhone sẽ không cho bật thông báo).</p>
         <p><strong>🤖 Android:</strong> Mở bằng Chrome → bấm dấu ba chấm (⋮) góc trên → chọn "Cài đặt ứng dụng" hoặc "Thêm vào màn hình chính".</p>
-        <p class="guide-note">Nếu thông báo hay bị gián đoạn, vào Cài đặt → Pin/Ứng dụng → tìm Chrome → bật chạy nền không giới hạn.</p>
+        <p class="guide-note">Nếu thông báo hay bị gián đoạn: trên Android vào Cài đặt → Pin/Ứng dụng → tìm Chrome → bật chạy nền không giới hạn; trên iPhone tắt Chế độ nguồn điện thấp và cho phép thông báo của app. Muốn chắc chắn nhất, hãy dùng "Nhắc bằng Lịch điện thoại".</p>
 
         <h3>📌 Lưu ý chung</h3>
         <ul>
           <li>Mọi dữ liệu lưu ngay trên máy đang dùng, không tự đồng bộ sang máy khác — muốn dùng ở nhiều máy thì làm theo mục "Xuất / nhập dữ liệu".</li>
           <li>Lịch lên lớp và lịch gửi KHBD tự lặp lại hằng tuần cho tới khi thầy cô sửa lại.</li>
-          <li>Nên mở lại app hằng ngày để thông báo hoạt động đều đặn.</li>
+          <li>Thông báo trong app cần app còn chạy nền; nên mở lại app hằng ngày. Với việc quan trọng (ví dụ giờ đón con), hãy bấm 📅 để thêm vào Lịch điện thoại cho chắc.</li>
         </ul>
 
         <p style="text-align:center;font-weight:700;color:var(--primary-deep);margin-top:14px;">Chúc các thầy cô thành công! 🌸</p>
